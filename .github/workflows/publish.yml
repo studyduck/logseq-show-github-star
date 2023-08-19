@@ -6,8 +6,12 @@ on:
     tags:
       - "*" # Push events to matching any tag format, i.e. 1.0, 20.15.10
 
+
+
 env:
   PLUGIN_NAME: logseq-show-github-star
+
+
 
 jobs:
   build:
@@ -29,7 +33,7 @@ jobs:
           echo "::set-output name=tag_name::$(git tag --sort version:refname | tail -n 1)"
 
       - name: Create Release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1.12.0
         id: create_release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
