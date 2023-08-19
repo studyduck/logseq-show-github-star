@@ -1,0 +1,1 @@
+# logseq-show-github-star
