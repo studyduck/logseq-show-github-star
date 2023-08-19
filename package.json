@@ -1,7 +1,7 @@
 {
   "name": "logseq-show-github-star",
   "author": "studyduck",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple logseq plugin that will display the star number for GitHub repo links",
   "main": "index.html",
   "logseq": {
